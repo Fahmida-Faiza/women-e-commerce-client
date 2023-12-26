@@ -1,0 +1,72 @@
+[
+  {
+    "id":"1",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Maybelline Eyestudio® Master Kajal® Eyeliner",
+    "description": "Long lasting, waterproof kohl eyeliner with precious oils for an easy glide and suitable for the inner eye rim.",
+    "price": "$10.99"
+  },
+  {
+    "id":"2",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Charlotte Tilbury Liquid Eye Pencil in Eye Cheat",
+    "description": "Hybrid formulation, consisting of liquid cream and kohl powder. Lasts for up to 14 hours and is durable to contact with water.",
+    "price": "$15.99"
+  },
+  {
+    "id":"3",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Vasanti Cosmetics Kajal Waterline Eyeliner",
+    "description": "Waterproof, smudge-proof, and transfer-proof. Suitable for sensitive eyes and contact lens wearers.",
+    "price": "$20.99"
+  },
+  {
+    "id":"4",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Rimmel Scandaleyes Waterproof Kohl Kajal Liner",
+    "description": "Intense color that lasts up to 24 hours. Waterproof, smudge-proof, and transfer-proof.",
+    "price": "$25.99"
+  },
+  {
+    "id":"5",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "MAYBELLINE Eyestudio Lasting Drama Gel Eyeliner",
+    "description": "Intense color that lasts up to 24 hours. Waterproof, smudge-proof, and transfer-proof.",
+    "price": "$30.99"
+  },
+  {
+    "id":"6",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "L'Oreal Paris Voluminous Lash Paradise Mascara",
+    "description": "Volumizing and lengthening mascara that lasts up to 24 hours. Suitable for sensitive eyes and contact lens wearers.",
+    "price": "$35.99"
+  },
+  {
+    "id":"7",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Nike Air Max 270 React",
+    "description": "Lightweight and comfortable shoes with a stylish design. Available in multiple colors.",
+    "price": "$40.99"
+  },
+  {
+    "id":"8",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Adidas Originals Trefoil Baseball Cap",
+    "description": "Classic baseball cap with a timeless design. Available in multiple colors.",
+    "price": "$45.99"
+  },
+  {
+    "id":"9",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Women's Sleeveless V-Neck Maxi Dress",
+    "description": "Comfortable and stylish maxi dress with a flattering V-neck design. Available in multiple colors.",
+    "price": "$50.99"
+  },
+  {
+    "id":"10",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Hanes Men's Full-Zip Eco-Smart Fleece Hoodie",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+    "price": "$55.99"
+  }
+]
