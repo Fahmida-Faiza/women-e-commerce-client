@@ -33,7 +33,11 @@ const Banner = () => {
             </div>
         </Carousel>
 
+<br></br>
+<div className="my-30 text-center font-extrabold text-5xl">
+    <p>This our new brand</p>
 
+</div>
 
  <Swiper
         slidesPerView={3}
