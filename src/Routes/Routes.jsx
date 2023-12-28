@@ -5,6 +5,7 @@ import Register from "../components/Register";
 import About from "../components/About";
 import Home from "../components/Home";
 import Order from "../components/Order";
+import Contact from "../components/Contact";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path:'/about',
                 element:<About></About>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             },
             {
                 path: '/login',

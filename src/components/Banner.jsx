@@ -1,6 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-// import img1 from "../assets/image.jpg"
+import img1 from "../assets/image.jpg"
+import img3 from "../assets/nior.jpg"
 import img2 from "../assets/pic.png"
 // import slide1 from "../assets/image.jpg"
 import slide2 from "../assets/nailpolish.png"
@@ -69,6 +70,24 @@ const Banner = () => {
       
       </Swiper>
 
+        <div>
+
+          <div className="hero min-h-screen ">
+            <div className="hero-content flex-col lg:flex-row-reverse">
+              <img src={img3} className="w-72 lg:w-96 rounded-lg shadow-2xl" />
+              <div>
+                <h1 className="text-5xl font-bold">EXPRESS YOURSELF <br></br>THROUGH NIOR<br></br> LIPSTICKS</h1>
+                <p className="py-6">When you can wear a statement, why make one?<br></br> Pick a matte lipstick that provides excellent coverage and transfer-proof color in one stroke.<br></br> The only thing you leave behind is your vibe, since the color stays with you the entire day!
+                  <br></br>
+
+
+                  A Tale of Enduring Influence on the Present and the Future</p>
+                <button className="btn btn-outline btn-secondary">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       <div>
           <Swiper
@@ -114,6 +133,9 @@ const Banner = () => {
             </SwiperSlide>
           </Swiper>
       </div>
+
+
+    
 
       </>
     );
