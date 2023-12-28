@@ -6,10 +6,10 @@ import img2 from "../assets/pic.png"
 import slide2 from "../assets/nailpolish.png"
 
 
-
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -68,6 +68,52 @@ const Banner = () => {
         </SwiperSlide>
       
       </Swiper>
+
+
+      <div>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="" />
+            </SwiperSlide>
+          </Swiper>
+      </div>
 
       </>
     );

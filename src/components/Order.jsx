@@ -14,18 +14,20 @@ const Order = () => {
 
   }, [])
     return (
-        <div>
+        <div className="my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
 
 {
     menu.map(item=> <MenuItem 
+        // item ta menuitem e props pathaitaysi
         key={item.id}
+
         item={item}
         ></MenuItem>)
 }
 
 
 
-            <h1>order page</h1>
+           
             {/* <div className="card w-96 bg-base-100 shadow-xl">
                 <figure><img src={Image.jpg} alt="Shoes" /></figure>
                 <p className="absolute right-0 mr-4 mt-4 px-4 bg-slate-900 text-white">$560</p>
