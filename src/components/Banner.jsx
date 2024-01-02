@@ -35,7 +35,7 @@ const Banner = () => {
       </Carousel>
 
       <br></br>
-      <div className="my-30 text-center font-extrabold text-5xl">
+      <div className="my-24 text-center font-extrabold text-5xl">
         <p>This our new brand</p>
 
       </div>
@@ -125,7 +125,7 @@ const Banner = () => {
       </div>
 
 
-      <div>
+      <div className="m-10">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
