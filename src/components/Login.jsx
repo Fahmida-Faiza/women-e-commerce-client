@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 
@@ -9,6 +10,11 @@ const Login = () => {
     const{signIn}= useContext(AuthContext)
 
 //
+const navigate = useNavigate();
+const location=useLocation();
+    const from = location.state?.from?.pathname || "/";
+    console.log('state in the location login page', location.state)
+// 
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -19,7 +25,17 @@ const Login = () => {
         signIn(email, password)
         .then(result =>{
             const user = result.user;
-            console.log(user)
+            console.log(user);
+            Swal.fire({
+                title: 'User Login Successful.',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            });
+             navigate(from, {replace:true})
         })
     
     }

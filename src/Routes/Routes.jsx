@@ -7,6 +7,8 @@ import Home from "../components/Home";
 import Order from "../components/Order";
 import Contact from "../components/Contact";
 import SignUp from "../components/SignUp"
+
+import PrivateRoute from "../Routes/PrivateRoute";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -16,10 +18,10 @@ const router = createBrowserRouter([
                 path:'/',
                 element:<Home></Home>
             },
-            {
-                path:'/order',
-                element:<Order></Order>
-            },
+            // {
+            //     path:'/order',
+            //     element:<Order></Order>
+            // },
             {
                 path:'/about',
                 element:<About></About>
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element:<Login></Login>
+            },
+            {
+                path: '/order',
+                element: <PrivateRoute><Order></Order></PrivateRoute>
             },
 
 
