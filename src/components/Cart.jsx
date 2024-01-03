@@ -7,6 +7,7 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 const Cart = () => {
     const [cart, refetch] = useCart();
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+    // console.log("price: ",totalPrice);
     const axiosSecure = useAxiosSecure();
 
     const handleDelete = id => {
@@ -40,7 +41,7 @@ const Cart = () => {
         <div>
             <div className="flex justify-evenly mb-8">
                 <h2 className="text-4xl">Items: {cart.length}</h2>
-                <h2 className="text-4xl">Total Price: {totalPrice}</h2>
+                <h2 className="text-4xl">Total Price: ${totalPrice}</h2>
                 <button className="btn btn-primary">Pay</button>
 
             </div>
@@ -76,7 +77,7 @@ const Cart = () => {
                                 <td>
                                     {item.title}
                                 </td>
-                                <td>{item.price}</td>
+                                <td>${item.price}</td>
                                 <th>
                                     <button
                                         onClick={() => handleDelete(item._id)}
