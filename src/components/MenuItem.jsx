@@ -1,8 +1,39 @@
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const MenuItem = ({item}) => {
     // order.jsx thikh e item receive krtysy
-    const {image,price,title,description}=item;
+    const {image, price, title, description}=item;
+    // user
+    const {user}= useContext(AuthContext)
+    // 
+    const location= useLocation()
+    const navigate= useNavigate()
+    const handleAddToCart= food =>{
+       if(user && user.email){
+        // send cart item to the database
+        console.log("login")
+       }
+       else{
+           Swal.fire({
+               title: "You are not Logged In",
+               text: "Please login to add to the cart?",
+               icon: "warning",
+               showCancelButton: true,
+               confirmButtonColor: "#3085d6",
+               cancelButtonColor: "#d33",
+               confirmButtonText: "Yes, login!"
+           }).then((result) => {
+               if (result.isConfirmed) {
+                   //   send the user to the login page
+                   navigate('/login', {state:{from:location}})
+               }
+           });
+       }
+    }
     return (
         <div className="">
             <div className="card w-72 mx-auto lg:w-96 bg-base-100 shadow-xl mb-10">
@@ -14,7 +45,7 @@ const MenuItem = ({item}) => {
                     <p>{description}</p>
                     <div className="card-actions justify-end">
                         <button
-                            // onClick={() => (handleAddToCart(item))}
+                            onClick={() => (handleAddToCart(item))}
 
 
                             className="btn btn-primary border-0 mt-4">Add to Cart</button>

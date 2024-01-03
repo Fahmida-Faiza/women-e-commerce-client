@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Tab, TabList,  TabPanel,  Tabs } from "react-tabs";
 import OrderTab from "../components/OrderTab"
 import 'react-tabs/style/react-tabs.css'
+// import MenuItem from "./menuItem";
 // import useMenu from "../hooks/useMenu"
 
 const Order = () => {
@@ -12,7 +13,8 @@ const Order = () => {
     const [tabIndex, setTabIndex] = useState(0);
     // const [menu] = useMenu();
      const [menu, setMenu] = useState([])
-  
+    
+    //  const all= menu;
     const eyeliner = menu.filter(item => item.category === 'eyeliner');
     const kajal = menu.filter(item => item.category === 'kajal');
     const dress = menu.filter(item => item.category === 'dress');
@@ -37,13 +39,18 @@ const Order = () => {
 
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList>
+                        <Tab>All</Tab>
                         <Tab>Kajal</Tab>
                         <Tab>Eyeliner</Tab>
                         <Tab>Dress</Tab>
                         <Tab>Shoes</Tab>
                         <Tab>Cap</Tab>
                     </TabList>
+                    
                    
+                    <TabPanel>
+                        <OrderTab item={menu}></OrderTab>
+                    </TabPanel>
                     <TabPanel>
                         <OrderTab item={kajal}></OrderTab>
                     </TabPanel>
