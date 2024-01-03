@@ -2,11 +2,14 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
+import useCart from "../hooks/useCart";
 
 
 const MenuItem = ({item}) => {
     // order.jsx thikh e item receive krtysy
-    const {image, price, title, description}=item;
+    const {image, price, title, description , _id }=item;
+    const [, refetch] =useCart()
     // user
     const {user}= useContext(AuthContext)
     // 
@@ -15,7 +18,30 @@ const MenuItem = ({item}) => {
     const handleAddToCart= food =>{
        if(user && user.email){
         // send cart item to the database
-        console.log("login")
+           const cartItem = {
+               menuId: _id,
+               email: user.email,
+              title,
+               image,
+               price
+           }
+           axios.post('http://localhost:5000/carts', cartItem)
+               .then(res => {
+                   console.log(res.data)
+                   if (res.data.insertedId) {
+                       Swal.fire({
+                           position: "top-end",
+                           icon: "success",
+                           title: `${title} added to your cart`,
+                           showConfirmButton: false,
+                           timer: 1500
+                       });
+                       // refetch cart to update the cart items count
+                       refetch();
+                   }
+
+               })
+       
        }
        else{
            Swal.fire({
