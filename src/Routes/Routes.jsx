@@ -7,8 +7,9 @@ import Home from "../components/Home";
 import Order from "../components/Order";
 import Contact from "../components/Contact";
 import SignUp from "../components/SignUp"
-
+import Dashboard from "../Layout/Dashboard"
 import PrivateRoute from "../Routes/PrivateRoute";
+import Cart from "../components/Cart";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -52,6 +53,27 @@ const router = createBrowserRouter([
             }
         ]
     },
+
+
+
+
+    {
+        path: 'dashboard',
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+        children: [
+            {
+                path: 'cart',
+                element: <Cart></Cart>
+            },
+
+            // admin routes
+            // {
+            //     path: 'users',
+            //     element: <AllUsers></AllUsers>
+            // }
+
+        ]
+    }
 ]);
 
 export default router;
