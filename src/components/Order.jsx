@@ -1,12 +1,28 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import MenuItem from "./menuItem";
+import { useEffect, useState } from "react";
 
+// import MenuItem from "./menuItem";
+import { Tab, TabList,  TabPanel,  Tabs } from "react-tabs";
+import OrderTab from "../components/OrderTab"
+import 'react-tabs/style/react-tabs.css'
+// import useMenu from "../hooks/useMenu"
 
 const Order = () => {
+    //   const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
+  
+    const [tabIndex, setTabIndex] = useState(0);
+    // const [menu] = useMenu();
+     const [menu, setMenu] = useState([])
+  
+    const eyeliner = menu.filter(item => item.category === 'eyeliner');
+    const kajal = menu.filter(item => item.category === 'kajal');
+    const dress = menu.filter(item => item.category === 'dress');
+    const shoes= menu.filter(item => item.category === 'shoes');
+    const cap = menu.filter(item => item.category === 'cap');
+
+    // ///////////////////////////////////////////////////////
 
     // data load json file
-    const[menu,setMenu]= useState([])
+    // const [menu, setMenu] = useState([])
   useEffect ( ()=> {
     fetch('data.json')
     .then(res=> res.json())
@@ -14,36 +30,59 @@ const Order = () => {
 
   }, [])
     return (
+
+        <>
+
+            <div>
+
+                <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+                    <TabList>
+                        <Tab>Kajal</Tab>
+                        <Tab>Eyeliner</Tab>
+                        <Tab>Dress</Tab>
+                        <Tab>Shoes</Tab>
+                        <Tab>Cap</Tab>
+                    </TabList>
+                   
+                    <TabPanel>
+                        <OrderTab item={kajal}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={cap}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={dress}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={eyeliner}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={shoes}></OrderTab>
+                    </TabPanel>
+                </Tabs>
+            </div>     
+        
         <div className="my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
 
-{
+{/* {
     menu.map(item=> <MenuItem 
         // item ta menuitem e props pathaitaysi
         key={item.id}
 
         item={item}
         ></MenuItem>)
-}
+} */}
 
 
 
-           
-            {/* <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={Image.jpg} alt="Shoes" /></figure>
-                <p className="absolute right-0 mr-4 mt-4 px-4 bg-slate-900 text-white">$560</p>
-                <div className="card-body flex flex-col items-center ">
-                    <h2 className="card-title"></h2>
-                    <p></p>
-                    <div className="card-actions justify-end">
-                        <button
-                            // onClick={() => (handleAddToCart(item))}
 
 
-                            className="btn btn-primary border-0 mt-4">Add to Cart</button>
-                    </div>
-                </div>
-            </div> */}
+
+       
         </div>
+
+        </>
+        
     );
 };
 

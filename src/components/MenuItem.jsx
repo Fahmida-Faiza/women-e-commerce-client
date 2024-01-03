@@ -2,7 +2,7 @@
 
 const MenuItem = ({item}) => {
     // order.jsx thikh e item receive krtysy
-    const{image,price,title,description}=item;
+    const {image,price,title,description}=item;
     return (
         <div className="">
             <div className="card w-72 mx-auto lg:w-96 bg-base-100 shadow-xl mb-10">
