@@ -10,6 +10,8 @@ import SignUp from "../components/SignUp"
 import Dashboard from "../Layout/Dashboard"
 import PrivateRoute from "../Routes/PrivateRoute";
 import Cart from "../components/Cart";
+import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -67,10 +69,10 @@ const router = createBrowserRouter([
             },
 
             // admin routes
-            // {
-            //     path: 'users',
-            //     element: <AllUsers></AllUsers>
-            // }
+            {
+                path: 'users',
+                element: <AllUsers></AllUsers>
+            }
 
         ]
     }
