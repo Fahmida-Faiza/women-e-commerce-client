@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 const ManageItems = () => {
-    const [menu,refetch] = useMenu();
+    const [menu, , refetch] = useMenu();
     const axiosSecure = useAxiosSecure();
 
     const handleDeleteItem = (item) => {
@@ -26,6 +26,7 @@ const ManageItems = () => {
                 if (res.data.deletedCount > 0) {
                     // refetch to update the ui
                     refetch();
+                    
                     Swal.fire({
                         position: "top-end",
                         icon: "success",

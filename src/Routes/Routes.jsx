@@ -77,7 +77,7 @@ const router = createBrowserRouter([
             // admin routes
             {
                 path: 'users',
-                element: <AllUsers></AllUsers>
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
             
             {
@@ -86,7 +86,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'manageItems',
-                element: <ManageItems></ManageItems>
+                element: <AdminRoute><ManageItems></ManageItems></AdminRoute>
             },
             {
                 path: 'updateItem/:id',
