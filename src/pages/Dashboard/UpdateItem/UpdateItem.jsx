@@ -10,13 +10,13 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 
 const UpdateItem = () => {
     // ///////
-    const {title, category, description, price, _id} = useLoaderData();
+    const { title, category, description, price, image, _id} = useLoaderData();
 // ///////
     const { register, handleSubmit } = useForm();
     const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
     const onSubmit = async (data) => {
-        console.log(data)
+        console.log(data.title)
         // image upload to imgbb and then get an url
         const imageFile = { image: data.image[0] }
         const res = await axiosPublic.post(image_hosting_api, imageFile, {
@@ -111,7 +111,7 @@ const UpdateItem = () => {
                     </div>
 
                     <div className="form-control w-full my-6">
-                        <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
+                        <input {...register('image', { required: true })} type="file"  className="file-input w-full max-w-xs" />
                     </div>
 
                     <button className="btn">
