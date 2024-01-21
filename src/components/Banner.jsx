@@ -39,7 +39,6 @@ const Banner = () => {
         <p>This our new brand</p>
 
       </div>
-
       <Swiper
         slidesPerView={4}
         spaceBetween={20}
@@ -105,7 +104,6 @@ const Banner = () => {
         </SwiperSlide>
 
       </Swiper>
-
       <div>
 
         <div className="hero min-h-screen ">

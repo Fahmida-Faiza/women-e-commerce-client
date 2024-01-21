@@ -21,10 +21,12 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+      
         children:[
             {
                 path:'/',
-                element:<Home></Home>
+                element:<Home></Home>,
+               
             },
             // {
             //     path:'/order',
@@ -44,7 +46,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/order',
-                element: <PrivateRoute><Order></Order></PrivateRoute>
+                element: <PrivateRoute><Order></Order></PrivateRoute>,
+                // element: <Order></Order>,
+                // loader: () => fetch('http://localhost:5000/menu')
             },
            
 

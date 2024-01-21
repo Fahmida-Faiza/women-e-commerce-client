@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Tab, TabList,  TabPanel,  Tabs } from "react-tabs";
 import OrderTab from "../components/OrderTab"
 import 'react-tabs/style/react-tabs.css'
+// import MenuItem from "./MenuItem";
+// import { useLoaderData } from "react-router-dom";
 // import MenuItem from "./menuItem";
 // import useMenu from "../hooks/useMenu"
 
@@ -20,6 +22,7 @@ const Order = () => {
     const dress = menu.filter(item => item.category === 'dress');
     const shoes= menu.filter(item => item.category === 'shoes');
     const cap = menu.filter(item => item.category === 'cap');
+    console.log(kajal)
 
     // ///////////////////////////////////////////////////////
 
@@ -31,6 +34,19 @@ const Order = () => {
     .then(data =>setMenu(data))
 
   }, [])
+
+
+
+
+//   //////////////ajaira code
+
+    // const loadedCoffees = useLoaderData();
+    // const [coffees, setCoffees] = useState(loadedCoffees)
+
+
+
+
+// /////////////////////
     return (
 
         <>
@@ -69,7 +85,7 @@ const Order = () => {
                 </Tabs>
             </div>     
         
-        <div className="my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3"> */}
 
 {/* {
     menu.map(item=> <MenuItem 
@@ -81,12 +97,32 @@ const Order = () => {
 } */}
 
 
-
-
-
-
        
-        </div>
+        {/* </div> */}
+
+
+        {/* ///////////// */}
+
+
+
+
+            {/* <div className='grid md:grid-cols-2 gap-6 border-2 border-red-400'>
+
+                {
+
+                    coffees.map(item => <MenuItem
+                        key={item._id}
+                        item={item}
+
+                        coffees={coffees}
+                        setCoffees={setCoffees}
+
+                    ></MenuItem>)
+                }
+            </div> */}
+
+
+
 
         </>
         

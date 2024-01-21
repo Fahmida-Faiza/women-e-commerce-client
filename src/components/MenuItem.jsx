@@ -63,7 +63,7 @@ const MenuItem = ({item}) => {
     return (
         <div className="">
             <div className="card w-72 mx-auto lg:w-96 bg-base-100 shadow-xl mb-10">
-                <figure><img src={image} alt="Shoes" /></figure>
+                <figure><img src={image} alt={title} className="w-96 h-56"/></figure>   {/* I add className here*/}
                 <p className="absolute right-0 mr-4 mt-4 px-4 bg-slate-900 text-white">{price}</p>
 
                 <div className="card-body flex flex-col items-center ">
