@@ -99,6 +99,11 @@ const Navbar = () => {
                                 <Link className="btn btn-accent" to="/login">Login</Link>
                         </>
                     }
+                    
+                    <div className="my-4">
+                        <Link className="btn btn-error" to="/form">Form Fill-up</Link>
+                    </div>
+                   
                 </div>
             </div>
         </div>

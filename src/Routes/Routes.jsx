@@ -15,6 +15,7 @@ import AddItems from "../pages/Dashboard/AddItems/AddItems";
 import ManageItems from "../pages/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../pages/Dashboard/UpdateItem/UpdateItem";
 import AdminRoute from "./AdminRoute";
+import Form from "../components/Form";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,13 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
+            // //////////extra form fillup
+            
+            {
+                path: '/form',
+                element: <Form></Form>
+            },
+            // ////////////////
             {
                 path: '/login',
                 element:<Login></Login>
@@ -48,7 +56,7 @@ const router = createBrowserRouter([
                 path: '/order',
                 element: <PrivateRoute><Order></Order></PrivateRoute>,
                 // element: <Order></Order>,
-                // loader: () => fetch('http://localhost:5000/menu')
+                // loader: () => fetch('https://women-e-commerce-server.vercel.app/menu')
             },
            
 
@@ -96,7 +104,7 @@ const router = createBrowserRouter([
             {
                 path: 'updateItem/:id',
                 element: <UpdateItem></UpdateItem>,
-                loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`)
+                loader: ({ params }) => fetch(`https://women-e-commerce-server.vercel.app/menu/${params.id}`)
             },
 
         ]

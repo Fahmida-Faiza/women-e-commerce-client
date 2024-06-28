@@ -1,82 +1,450 @@
 [
   {
     "id":"1",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Maybelline Eyestudio® Master Kajal® Eyeliner",
+    "image": "https://i.ibb.co/CWYcBNZ/bangla-pora-0.jpg",
+    "title": "Sonamonider Bangla Pora - 0",
     "description": "Long lasting, waterproof kohl eyeliner with precious oils for an easy glide and suitable for the inner eye rim.",
-     "category": "kajal",
-    "price": 10.99
+     "category": "Play",
+    "price": 140
   },
   {
     "id":"2",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Charlotte Tilbury Liquid Eye Pencil in Eye Cheat",
+    "image": "https://i.ibb.co/nnvTVwS/bangla-pora-1.jpg",
+    "title": "Bangla Pora - K",
     "description": "Hybrid formulation, consisting of liquid cream and kohl powder. Lasts for up to 14 hours and is durable to contact with water.",
-     "category": "kajal",
-    "price": 15.99
+     "category": "Nursery",
+    "price": 130
   },
   {
     "id":"3",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Vasanti Cosmetics Kajal Waterline Eyeliner",
+    "image": "https://i.ibb.co/hgM5JKt/bangla-pora-2.jpg",
+    "title": "Bangla Pora - Kh",
     "description": "Waterproof, smudge-proof, and transfer-proof. Suitable for sensitive eyes and contact lens wearers.",
-     "category": "eyeliner",
-    "price": 20.99
+     "category": "KG",
+    "price": 140
   },
   {
     "id":"4",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Rimmel Scandaleyes Waterproof Kohl Kajal Liner",
+    "image": "https://i.ibb.co/yFC5NVw/ABC-1.jpg",
+    "title": "ABC First Step",
     "description": "Intense color that lasts up to 24 hours. Waterproof, smudge-proof, and transfer-proof.",
-     "category": "kajal",
-    "price": 25.99
+     "category": "Nursery",
+    "price": 136
   },
   {
     "id":"5",
     "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "MAYBELLINE Eyestudio Lasting Drama Gel Eyeliner",
+    "title": "ABC 2nd Step",
     "description": "Intense color that lasts up to 24 hours. Waterproof, smudge-proof, and transfer-proof.",
-     "category": "eyeliner",
-    "price": 30.99
+     "category": "KG",
+    "price": 150
   },
   {
     "id":"6",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "L'Oreal Paris Voluminous Lash Paradise Mascara",
+    "image": "https://i.ibb.co/GxdRHYm/Fun-ABC.jpg",
+    "title": "Fun ABC",
     "description": "Volumizing and lengthening mascara that lasts up to 24 hours. Suitable for sensitive eyes and contact lens wearers.",
-     "category": "mascara",
-    "price": 35.99
+     "category": "Play",
+    "price": 130
   },
   {
     "id":"7",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Nike Air Max 270 React",
+    "image": "https://i.ibb.co/PMhK9bg/rhymes-0.jpg",
+    "title": "Voyager Rhymes",
     "description": "Lightweight and comfortable shoes with a stylish design. Available in multiple colors.",
-     "category": "shoes",
-    "price": 40.99
+     "category": "Play",
+    "price": 100
   },
   {
     "id":"8",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Adidas Originals Trefoil Baseball Cap",
+    "image": "https://i.ibb.co/0c97BMX/albert-active-1.jpg",
+    "title": "Albert Active - 1",
     "description": "Classic baseball cap with a timeless design. Available in multiple colors.",
-     "category": "cap",
-    "price": 45.99
+     "category": "KG",
+    "price": 140
   },
   {
     "id":"9",
-    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Women's Sleeveless V-Neck Maxi Dress",
+    "image": "https://i.ibb.co/xjPXsXQ/albert-active-2.jpg",
+    "title": "Albert Active - 2",
     "description": "Comfortable and stylish maxi dress with a flattering V-neck design. Available in multiple colors.",
-     "category": "dress",
-    "price": 50.99
+     "category": "Class - 2",
+    "price": 140
   },
   {
     "id":"10",
     "image": "https://i.ibb.co/qN1Q58q/4.jpg",
-    "title": "Hanes Men's Full-Zip Eco-Smart Fleece Hoodie",
+    "title": "Albert Active - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 160
+  },
+  {
+    "id":"11",
+    "image": "https://i.ibb.co/dbFNvZ9/gonit-sikkha.jpg",
+    "title": "Gonit Sikkha",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Play",
+    "price": 172
+  },
+  {
+    "id":"12",
+    "image": "https://i.ibb.co/vXfns7x/gonit-sikkha-1.jpg",
+    "title": "Progress Gonit Sikkha",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 172
+  },
+  {
+    "id":"13",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Gonit Sikkha - 2 This book will be delete number 13",
     "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
      "category": "hoodie",
-    "price": 55.99
+    "price": 140
+  },
+  {
+    "id":"14",
+    "image": "https://i.ibb.co/C91RM7z/gonit-sikkha-0.jpg",
+    "title": "Voyager Gonit Sikkha",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "KG",
+    "price": 135
+  },
+  {
+    "id":"15",
+    "image": "https://i.ibb.co/TkvDRCF/arbi-islam-0.jpg",
+    "title": "Arbi - 0",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 130
+  },
+  {
+    "id":"16",
+    "image": "https://i.ibb.co/MB4xLGP/arbi-islam-1.jpg",
+    "title": "Arbi - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 130
+  },
+  {
+    "id":"17",
+    "image": "https://i.ibb.co/Y7JqKth/arbi-islam-2.jpg",
+    "title": "Arbi - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 150
+  },
+  {
+    "id":"18",
+    "image": "https://i.ibb.co/RbsL1WR/word-skills.jpg",
+    "title": "Word Skills",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 125
+  },
+  {
+    "id":"19",
+    "image": "https://i.ibb.co/HCvMGzb/picture-word-1.jpg",
+    "title": "Word Book - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 135
+  },
+  {
+    "id":"20",
+    "image": "https://i.ibb.co/Nrdhtbk/picture-word-2.jpg",
+    "title": "Word Book - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 135
+  },
+  {
+    "id":"21",
+    "image": "https://i.ibb.co/kG321m0/drawing-0.jpg",
+    "title": "Drawing - 0",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Play",
+    "price": 110
+  },
+  {
+    "id":"22",
+    "image": "https://i.ibb.co/Bnxq5sk/drawing-1.jpg",
+    "title": "Drawing - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "KG",
+    "price": 155
+  },
+  {
+    "id":"23",
+    "image": "https://i.ibb.co/yWVFhbb/drawing-2.jpg",
+    "title": "Drawing - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 155
+  },
+  {
+    "id":"24",
+    "image": "https://i.ibb.co/Pxks6Ms/drawing-3.jpg",
+    "title": "Drawing - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 155
+  },
+  {
+    "id":"25",
+    "image": "https://i.ibb.co/jVmxT72/drawing-4.jpg",
+    "title": "Drawing - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 130
+  },
+  {
+    "id":"26",
+    "image": "https://i.ibb.co/SPPQLLj/general-0.jpg",
+    "title": "General Knowledge - 0",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 120
+  },
+  {
+    "id":"27",
+    "image": "https://i.ibb.co/vVDzCbN/general-1.jpg",
+    "title": "General Knowledge - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "KG",
+    "price": 125
+  },
+  {
+    "id":"28",
+    "image": "https://i.ibb.co/5Tfy3XK/general-2.jpg",
+    "title": "General Knowledge - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 135
+  },
+  {
+    "id":"29",
+    "image": "https://i.ibb.co/sy5M4FF/general-3.jpg",
+    "title": "General Knowledge - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 135
+  },
+  {
+    "id":"30",
+    "image": "https://i.ibb.co/5cPmNQS/general-4.jpg",
+    "title": "General Knowledge - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 135
+  },
+  {
+    "id":"31",
+    "image": "https://i.ibb.co/GCDmTbR/Poribesh-Porichiti-1.jpg",
+    "title": "Poribesh Porichiti - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 180
+  },
+  {
+    "id":"32",
+    "image": "https://i.ibb.co/RTm0gqg/poribesh-porichiti-2.jpg",
+    "title": "Poribesh Porichiti - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 180
+  },
+  {
+    "id":"33",
+    "image": "https://i.ibb.co/hF5Nr01/bangla-grammar-1.jpg",
+    "title": "Bangla Grammar - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 180
+  },
+  {
+    "id":"34",
+    "image": "https://i.ibb.co/BNvM2bp/bangla-grammar-2.jpg",
+    "title": "Bangla Grammar - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 220
+  },
+  {
+    "id":"35",
+    "image": "https://i.ibb.co/fkDjpXs/bangla-grammar-3.jpg",
+    "title": "Bangla Grammar - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 320
+  },
+  {
+    "id":"36",
+    "image": "https://i.ibb.co/y5Kd5mx/bangla-grammar-4.jpg",
+    "title": "Bangla Grammar - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 4",
+    "price": 340
+  },
+  {
+    "id":"37",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "Bangla Grammar - 5",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 5",
+    "price": 450
+  },
+  {
+    "id":"38",
+    "image": "https://i.ibb.co/MNqybKq/english-grammar-1.jpg",
+    "title": "English Grammar - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 180
+  },
+  {
+    "id":"39",
+    "image": "https://i.ibb.co/JynnmWN/english-grammar-2.jpg",
+    "title": "English Grammar - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 270
+  },
+  {
+    "id":"40",
+    "image": "https://i.ibb.co/r5NvYnB/english-grammar-3.jpg",
+    "title": "English Grammar - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 340
+  },
+  {
+    "id":"41",
+    "image": "https://i.ibb.co/NpCsrkF/english-grammar-4.jpg",
+    "title": "English Grammar - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 4",
+    "price": 340
+  },
+  {
+    "id":"42",
+    "image": "https://i.ibb.co/qN1Q58q/4.jpg",
+    "title": "English Grammar - 5",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 5",
+    "price": 420
+  },
+  {
+    "id":"43",
+    "image": "https://i.ibb.co/6tj9Xjd/jamity-1.jpg",
+    "title": "Jamiti - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 125
+  },
+  {
+    "id":"44",
+    "image": "https://i.ibb.co/zSNnxkb/jamity-2.jpg",
+    "title": "Jamiti - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 125
+  },
+  {
+    "id":"45",
+    "image": "https://i.ibb.co/KN3YcJs/jamity-3.jpg",
+    "title": "Jamiti - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 4",
+    "price": 170
+  },
+  {
+    "id":"46",
+    "image": "https://i.ibb.co/3F1KJPg/computer-1.jpg",
+    "title": "Computer - 1",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 2",
+    "price": 100
+  },
+  {
+    "id":"47",
+    "image": "https://i.ibb.co/BnYcNzh/computer-2.jpg",
+    "title": "Computer - 2",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 3",
+    "price": 100
+  },
+  {
+    "id":"48",
+    "image": "https://i.ibb.co/GxdRHYm/Fun-ABC.jpg",
+    "title": "Fun ABC",
+    "description": "Volumizing and lengthening mascara that lasts up to 24 hours. Suitable for sensitive eyes and contact lens wearers.",
+     "category": "Nursery",
+    "price": 130
+  },
+  {
+    "id":"49",
+    "image": "https://i.ibb.co/PMhK9bg/rhymes-0.jpg",
+    "title": "Voyager Rhymes",
+    "description": "Lightweight and comfortable shoes with a stylish design. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 100
+  },  
+  {
+    "id":"50",
+    "image": "https://i.ibb.co/0c97BMX/albert-active-1.jpg",
+    "title": "Albert Active - 1",
+    "description": "Classic baseball cap with a timeless design. Available in multiple colors.",
+     "category": "Class - 1",
+    "price": 140
+  },
+  {
+    "id":"51",
+    "image": "https://i.ibb.co/C91RM7z/gonit-sikkha-0.jpg",
+    "title": "Voyager Gonit Sikkha",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 135
+  },
+  {
+    "id":"52",
+    "image": "https://i.ibb.co/TkvDRCF/arbi-islam-0.jpg",
+    "title": "Arbi - 0",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "KG",
+    "price": 130
+  },
+  {
+    "id":"53",
+    "image": "https://i.ibb.co/jVmxT72/drawing-4.jpg",
+    "title": "Drawing - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 4",
+    "price": 130
+  },
+  {
+    "id":"54",
+    "image": "https://i.ibb.co/5cPmNQS/general-4.jpg",
+    "title": "General Knowledge - 4",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 4",
+    "price": 135
+  },
+  {
+    "id":"55",
+    "image": "https://i.ibb.co/KN3YcJs/jamity-3.jpg",
+    "title": "Jamiti - 3",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Class - 5",
+    "price": 170
+  },
+  {
+    "id":"56",
+    "image": "https://i.ibb.co/kG321m0/drawing-0.jpg",
+    "title": "Drawing - 0",
+    "description": "Comfortable and eco-friendly hoodie made from recycled materials. Available in multiple colors.",
+     "category": "Nursery",
+    "price": 110
   }
 ]

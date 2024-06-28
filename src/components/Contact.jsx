@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../providers/AuthProvider";
+import useCart from "../hooks/useCart";
 
 
 
@@ -13,34 +14,36 @@ const Contact = () => {
     console.log(user)
 
     // 
-    
+    const [, refetch] = useCart()
+    // 
+
     const handlecontact = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const name = form.name.value;
         const message = form.message.value;
-        console.log(email,name, message);
-///////////////////////
-// database called
+        console.log(email, name, message);
+        ///////////////////////
+        // database called
         const contactItem = { email, name, message };
-    //  /////////
-        axios.post('http://localhost:5000/contact', contactItem)
-        .then(res => {
-            console.log(res.data)
-            if (res.data.insertedId) {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: `Message Send Successfully`,
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                // refetch cart to update the cart items count
-                // refetch();
-            }
+        //  /////////
+        axios.post('https://women-e-commerce-server.vercel.app/contact', contactItem)
+            .then(res => {
+                console.log(res.data)
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `Message Send Successfully`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    // refetch cart to update the cart items count
+                    refetch();
+                }
 
-        })
+            })
     }
 
 
@@ -76,14 +79,14 @@ const Contact = () => {
 
 
 
-                                    name="name" 
+                                    name="name"
                                     // defaultValue={user?.displayName}
-                                  required
+                                    required
 
                                     placeholder="Type here Full Name"
                                     className="input input-bordered w-full" />
 
-                               
+
                             </label>
                             <label className="form-control w-full">
                                 <div className="label">
@@ -91,14 +94,14 @@ const Contact = () => {
                                 </div>
                                 <input type="email"
 
-                                    name="email" 
+                                    name="email"
                                     // defaultValue={user.email}
-                                  
-required
+
+                                    required
 
                                     placeholder="Type here your email"
                                     className="input input-bordered w-full" />
-                               
+
                             </label>
                             <label className="form-control w-full">
                                 <div className="label">
@@ -107,17 +110,17 @@ required
                                 <textarea className="textarea textarea-info textarea-lg "
 
                                     name="message"
-                                  required
-                                    
+                                    required
+
                                     placeholder="Message Us"></textarea>
-                                
+
                             </label>
 
                         </div>
                     </div>
                     <button className="btn btn-secondary w-2/4 my-5">Submit</button>
                 </div>
-     </form>
+            </form>
         </>
     );
 };

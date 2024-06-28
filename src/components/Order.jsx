@@ -17,12 +17,15 @@ const Order = () => {
      const [menu, setMenu] = useState([])
     
     //  const all= menu;
-    const eyeliner = menu.filter(item => item.category === 'eyeliner');
-    const kajal = menu.filter(item => item.category === 'kajal');
-    const dress = menu.filter(item => item.category === 'dress');
-    const shoes= menu.filter(item => item.category === 'shoes');
-    const cap = menu.filter(item => item.category === 'cap');
-    console.log(kajal)
+    const Play = menu.filter(item => item.category === 'Play');
+    const Nursery = menu.filter(item => item.category === 'Nursery');
+    const KG = menu.filter(item => item.category === 'KG');
+    const class_1 = menu.filter(item => item.category === 'Class - 1');
+    const class_2 = menu.filter(item => item.category === 'Class - 2');
+    const class_3 = menu.filter(item => item.category === 'Class - 3');
+    const class_4 = menu.filter(item => item.category === 'Class - 4');
+    const class_5 = menu.filter(item => item.category === 'Class - 5');
+    // console.log(Nursery)
 
     // ///////////////////////////////////////////////////////
 
@@ -56,11 +59,14 @@ const Order = () => {
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList>
                         <Tab>All</Tab>
-                        <Tab>Kajal</Tab>
-                        <Tab>Eyeliner</Tab>
-                        <Tab>Dress</Tab>
-                        <Tab>Shoes</Tab>
-                        <Tab>Cap</Tab>
+                        <Tab>Nursery</Tab>
+                        <Tab>Play</Tab>
+                        <Tab>KG</Tab>
+                        <Tab>Class-1</Tab>
+                        <Tab>Class-2</Tab>
+                        <Tab>Class-3</Tab>
+                        <Tab>Class-4</Tab>
+                        <Tab>Class-5</Tab>
                     </TabList>
                     
                    
@@ -68,19 +74,28 @@ const Order = () => {
                         <OrderTab item={menu}></OrderTab>
                     </TabPanel>
                     <TabPanel>
-                        <OrderTab item={kajal}></OrderTab>
+                        <OrderTab item={Nursery}></OrderTab>
                     </TabPanel>
                     <TabPanel>
-                        <OrderTab item={cap}></OrderTab>
+                        <OrderTab item={KG}></OrderTab>
                     </TabPanel>
                     <TabPanel>
-                        <OrderTab item={dress}></OrderTab>
+                        <OrderTab item={Play}></OrderTab>
                     </TabPanel>
                     <TabPanel>
-                        <OrderTab item={eyeliner}></OrderTab>
+                        <OrderTab item={class_1}></OrderTab>
                     </TabPanel>
                     <TabPanel>
-                        <OrderTab item={shoes}></OrderTab>
+                        <OrderTab item={class_2}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={class_3}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={class_4}></OrderTab>
+                    </TabPanel>
+                    <TabPanel>
+                        <OrderTab item={class_5}></OrderTab>
                     </TabPanel>
                 </Tabs>
             </div>     
